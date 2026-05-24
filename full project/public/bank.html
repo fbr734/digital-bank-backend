@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Bank</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Digital Banking System</h1>
+
+    <div class="card">
+
+      <h2>Customer Registration</h2>
+
+      <input type="text" id="fullName" placeholder="Full Name">
+
+      <input type="email" id="email" placeholder="Email">
+
+      <input type="password" id="password" placeholder="Password">
+
+      <input type="text" id="bvn" placeholder="BVN">
+
+      <button onclick="registerUser()">
+        Register
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <h2>Create Account</h2>
+
+      <button onclick="createAccount()">
+        Create Account
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <h2>Check Balance</h2>
+
+      <button onclick="checkBalance()">
+        Check Balance
+      </button>
+
+      <p id="balance"></p>
+
+    </div>
+
+    <div class="card">
+
+      <h2>Transfer Funds</h2>
+
+      <input type="text" id="receiverAccount"
+        placeholder="Receiver Account">
+
+      <input type="number" id="amount"
+        placeholder="Amount">
+
+      <button onclick="transferFunds()">
+        Transfer
+      </button>
+
+    </div>
+
+    <div class="card">
+
+      <h2>Transaction History</h2>
+
+      <button onclick="loadHistory()">
+        Load History
+      </button>
+
+      <ul id="history"></ul>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
