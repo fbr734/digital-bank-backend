@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-   "dev": "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "dependencies": {
     "axios": "^1.16.1",
@@ -21,7 +21,6 @@
     "nodemon": "^3.1.14",
     "uuid": "^14.0.0"
   },
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fbr734/digital-bank-backend.git"

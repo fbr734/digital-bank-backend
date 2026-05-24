@@ -2,29 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Bank</title>
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Digital Banking System</title>
 
   <link rel="stylesheet" href="style.css">
-  
 </head>
+
 <body>
 
   <div class="container">
 
     <h1>Digital Banking System</h1>
 
+    <!-- REGISTER -->
+
     <div class="card">
 
       <h2>Customer Registration</h2>
 
-      <input type="text" id="fullName" placeholder="Full Name">
+      <input type="text"
+        id="fullName"
+        placeholder="Full Name">
 
-      <input type="email" id="email" placeholder="Email">
+      <input type="email"
+        id="email"
+        placeholder="Email">
 
-      <input type="password" id="password" placeholder="Password">
+      <input type="password"
+        id="password"
+        placeholder="Password">
 
-      <input type="text" id="bvn" placeholder="BVN">
+      <input type="text"
+        id="bvn"
+        placeholder="BVN">
 
       <button onclick="registerUser()">
         Register
@@ -32,9 +45,11 @@
 
     </div>
 
+    <!-- ACCOUNT -->
+
     <div class="card">
 
-      <h2>Create Account</h2>
+      <h2>Create Bank Account</h2>
 
       <button onclick="createAccount()">
         Create Account
@@ -42,9 +57,11 @@
 
     </div>
 
+    <!-- BALANCE -->
+
     <div class="card">
 
-      <h2>Check Balance</h2>
+      <h2>Check Account Balance</h2>
 
       <button onclick="checkBalance()">
         Check Balance
@@ -54,21 +71,27 @@
 
     </div>
 
+    <!-- TRANSFER -->
+
     <div class="card">
 
       <h2>Transfer Funds</h2>
 
-      <input type="text" id="receiverAccount"
-        placeholder="Receiver Account">
+      <input type="text"
+        id="receiverAccount"
+        placeholder="Receiver Account Number">
 
-      <input type="number" id="amount"
+      <input type="number"
+        id="amount"
         placeholder="Amount">
 
       <button onclick="transferFunds()">
-        Transfer
+        Transfer Funds
       </button>
 
     </div>
+
+    <!-- HISTORY -->
 
     <div class="card">
 
